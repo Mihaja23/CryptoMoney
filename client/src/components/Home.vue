@@ -2,7 +2,7 @@
   <div class="container">
     <header class="jumbotron">
       <h3>{{ content }}</h3>
-      <img src="../assets/mihaja.png" style="width: 100%;" />
+      <img src="../assets/crypto-monnaies.png" style="width: 100%;" />
     </header>
   </div>
 </template>

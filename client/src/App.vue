@@ -5,7 +5,7 @@
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/home" class="nav-link">
-            <font-awesome-icon icon="home" /> Home
+            <font-awesome-icon icon="home" /> Acceuil
           </router-link>
         </li>
         <li v-if="showAdminBoard" class="nav-item">

@@ -29,25 +29,25 @@ const routes = [
   {
     path: "/profile",
     name: "profile",
-    // lazy-loaded
+    
     component: Profile,
   },
   {
     path: "/admin",
     name: "admin",
-    // lazy-loaded
+ 
     component: BoardAdmin,
   },
   {
     path: "/mod",
     name: "moderator",
-    // lazy-loaded
+   
     component: BoardModerator,
   },
   {
     path: "/user",
     name: "user",
-    // lazy-loaded
+    
     component: BoardUser,
   },
 ];
@@ -63,8 +63,8 @@ router.beforeEach((to, from, next) => {
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = localStorage.getItem('user');
 
-  // trying to access a restricted page + not logged in
-  // redirect to login page
+  // tentative d'accès à une page à accès restreint + non connecté
+  // redirige vers la page de connexion
   if (authRequired && !loggedIn) {
     next('/login');
   } else {

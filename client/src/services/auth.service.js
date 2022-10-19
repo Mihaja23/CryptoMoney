@@ -2,6 +2,8 @@ import axios from 'axios';
 
 const API_URL = 'http://localhost:8080/api/auth/';
 
+// AuthService permet de récuperer les données de la personne inscrit 
+
 class AuthService {
   login(user) {
     return axios
